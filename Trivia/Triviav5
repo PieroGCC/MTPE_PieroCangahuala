@@ -1,0 +1,105 @@
+#Importar Librerias
+import random
+
+#Contexto de la Trivia
+print("\t\t\t\t\t\t\t\t**Trivia de Videojuegos**")
+print("Se pondrán a prueba tus conocimientos")
+
+#Solicitando nombre
+nombre = input("Ingresa tu nombre: ")
+
+#PUNTAJES INICIALES DE LAS 3 PREGUNTAS
+puntajeA = 0
+puntajeB = 0
+puntajeC = 0
+puntajeTotal = random.randint(0,20)
+print(f"Hola {nombre} tu puntaje inicial es {puntajeTotal}")
+
+#Instrucciones de la trivia
+print(
+    f"{nombre.capitalize()} responde las siguientes preguntas y presiona *Enter* para enviar tu\nrespuesta:\n"
+)
+
+#Pregunta 01
+print("1) ¿En qué año salió al mercado la primera consola?\n")
+print("\ta) 1969")
+print("\tb) 1970")
+print("\tc) 1971")
+print("\td) 1972")
+print("\te) 1968\n")
+
+#Almacenando respuesta 01
+r_p1 = input("Tu Respuesta: ") 
+while r_p1 not in ("a","b","c","d","e","1969","1970","1971","1972","1968"):
+  r_p1 = input("Respuesta no válida, vuelve a ingresar una respuesta: ")
+    
+#Evaluando Respuesta y Resultado p01
+if r_p1 == "1972" or r_p1 == "d":
+  #AGREGANDO PUNTAJE RANDOM DE 0 A 8
+  puntajeA += random.randint(0,8)
+  #IMPRIMIENDO RESPUESTA CORRECTA Y PUNTAJE
+  print(f"\n{nombre.capitalize()} tu respuesta es correcta!, has obtenido {puntajeA} puntos")
+  puntajeTotal=puntajeA
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p1 == "1969" or r_p1 == "a":
+  puntajeA = random.randint(-2,0)
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeA
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p1 == "1970" or r_p1 == "b":
+  puntajeA = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeA
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p1 == "1971" or r_p1 == "c":
+  puntajeA = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeA
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p1 == "1968" or r_p1 == "e":
+  puntajeA = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeA
+  print(f"Tu puntaje total es: {puntajeTotal}")
+      
+#PREGUNTA 2
+print("\n2) ¿Quién es el fundador de la tienda de Video Juegos Steam?\n")
+print("\ta) Tim Sweeney")
+print("\tb) Gabe Newell")
+print("\tc) Michael Morhaime")
+print("\td) Frank Pearce")
+print("\te) Yves Guillemot\n")
+
+#Almacenando respuesta 02
+r_p2 = input("Tu Respuesta: ")
+while r_p2 not in ("a","b","c","d","e","Tim Sweeney","Gabe Newell","Michael Morhaime","Frank Pearce","Yves Guillemot"):
+  r_p2 = input("Respuesta no válida, vuelve a ingresar una respuesta: ")
+#Evaluando Respuesta y Resultado p02
+if r_p2 == "Gabe Newell" or r_p2 == "b":
+  puntajeB += random.randint(0,6)
+  print(f"\n{nombre.capitalize()} tu respuesta es correcta!, has obtenido {puntajeB} puntos")
+  puntajeTotal+=(2*puntajeB)
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p2 == "Tim Sweeney" or r_p1 == "a":
+  puntajeB = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=(puntajeB-5)
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p2 == "Michael Morhaime" or r_p1 == "c":
+  puntajeB = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=(puntajeB+5)
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p2 == "Frank Pearce" or r_p1 == "d":
+  puntajeB = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeB
+  print(f"Tu puntaje total es: {puntajeTotal}")
+elif r_p2 == "Yves Guillemot" or r_p1 == "e":
+  puntajeB = random.randint(-2,0)
+  print(f"\n{nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeB
+  puntajeTotal/=2
+  print(f"Tu puntaje total es: {puntajeTotal}")
+
+print(f"\nMuchas gracias {nombre.capitalize()} por participar en esta trivia tu puntuacion total es {puntajeTotal}")

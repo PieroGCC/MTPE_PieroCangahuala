@@ -1,0 +1,33 @@
+#PARTE 1
+x = int(input("Ingrese un número: "))
+if x >= 0:
+  print("El número es positivo")
+else :
+  print("El número es negativo")
+
+#PARTE 2
+x = int(input("Ingrese un número: "))
+y = x*x
+if x*x >= 0:
+  print(f"El número {y} es positivo")
+else :
+  print(f"El número {y} es negativo")
+
+#PARTE 3
+x = int(input("Ingrese un número: "))
+y = x*x
+if x*x >= 0:
+  print(f"El número {y} es positivo")
+else :
+  print(f"El número {y} es negativo")
+
+#PARTE 4
+x = int(input("Ingrese el primer número: "))
+y = int(input("Ingrese el segundo número: "))
+
+if x > y:
+  print(f"El número {x} es mayor")
+elif y > x:
+  print(f"Elnumero {y} es mayor")
+elif y==x:
+  print("Los números son iguales")

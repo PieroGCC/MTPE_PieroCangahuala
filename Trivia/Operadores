@@ -1,0 +1,29 @@
+N1 = int(input("Ingrese el primer numero: "))
+N2 = int(input("Ingrese el segundo numero: "))
+Op = input("Ingrese la operación: ")
+
+while Op not in ("*","+","-","/"):
+  Op = input("Operación inválida, vuelva a insertar: ")
+
+if Op == "*":
+  Resultado = N1*N2
+elif Op == "+":
+  Resultado = N1+N2
+elif Op == "-":
+  Resultado = N1-N2
+elif Op == "/":
+  Resultado = N1/N2
+
+print(f"El resultado de la operación es: {Resultado}")
+
+
+
+
+
+
+N1 = int(input("Ingrese el primer numero: "))
+N2 = int(input("Ingrese el segundo numero: "))
+
+Resultado = (N1**2+N2**2)**(1/2)
+
+print(f"El resultado de la operación es: {Resultado}")

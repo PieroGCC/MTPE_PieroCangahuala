@@ -1,0 +1,55 @@
+#Contexto de la Trivia
+print("\t\t\t\t\t\t\t\t**Trivia de Videojuegos**")
+print("Se pondrán a prueba tus conocimientos")
+#Instrucciones de la trivia
+print(
+    "Responde las siguientes preguntas y presiona *Enter* para enviar tu respuesta:\n"
+)
+#Pregunta 01
+print("1) ¿En qué año salió al mercado la primera consola?\n")
+print("\ta) 1969")
+print("\tb) 1970")
+print("\tc) 1971")
+print("\td) 1972")
+print("\te) 1968\n")
+#Almacenando respuesta 01
+r_p1 = input("Tu Respuesta: ")
+
+#Evaluando Respuesta y Resultado p01
+if r_p1 == "1972" or r_p1 == "d":
+    print("Es Correcto!")
+else:
+    print("Es incorrecto")
+
+#Pregunta 02
+print("\n2) ¿Quién es el fundador de la tienda de Video Juegos Steam?\n")
+print("\ta) Tim Sweeney")
+print("\tb) Gabe Newell")
+print("\tc) Michael Morhaime")
+print("\td) Frank Pearce")
+print("\te) Yves Guillemot\n")
+#Almacenando respuesta 02
+r_p2 = input("Tu Respuesta: ")
+
+#Evaluando Respuesta y Resultado p02
+if r_p2 == "Gabe Newell" or r_p2 == "b":
+    print("Es Correcto!")
+else:
+    print("Es incorrecto")
+
+#Pregunta 03
+print("\n2) ¿Cual de los videojuegos son pertenece al género Shooter?\n")
+print("\ta) Counter Strike Global Offensive")
+print("\tb) Team Fortress")
+print("\tc) Overwatch")
+print("\td) Warframe")
+print("\te) N.a\n")
+
+#Almacenando respuesta 03
+r_p3 = input("Tu Respuesta: ")
+
+#Evaluando Respuesta y Resultado p02
+if r_p3 == "N.a" or r_p3 == "e":
+    print("Es Correcto!")
+else:
+    print("Es incorrecto")

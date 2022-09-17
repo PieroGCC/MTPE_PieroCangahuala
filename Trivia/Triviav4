@@ -1,0 +1,26 @@
+#Almacenando respuesta 03
+r_p3 = input("Tu Respuesta: ")
+while r_p3 not in ("a","b","c","d","e","Counter Strike Global Offensive","Team Fortress","Overwatch","Warframe","N.a"):
+  r_p2 = input("Respuesta no válida, vuelve a ingresar una respuesta: ")
+
+#Evaluando Respuesta y Resultado p02
+if r_p3 == "N.a" or r_p3 == "e":
+  puntajeC += 6
+  print(f"\n{nombre.capitalize()} tu respuesta es correcta!, has obtenido {puntajeC} puntos")
+  puntajeTotal+=puntajeC
+  print(f"Tu puntaje total es: {puntajeTotal}")  
+elif r_p3 == "Counter Strike Global Offensive" or r_p1 == "a":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal-=puntajeC
+  print(f"Tu puntaje total es: {puntajeTotal}")  
+elif r_p3 == "Team Fortress" or r_p1 == "b":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeC
+  print(f"Tu puntaje total es: {puntajeTotal}")  
+elif r_p3 == "Overwatch" or r_p1 == "c":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeC
+  print(f"Tu puntaje total es: {puntajeTotal}")  
+elif r_p3 == "Warframe" or r_p1 == "d":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+  puntajeTotal+=puntajeC

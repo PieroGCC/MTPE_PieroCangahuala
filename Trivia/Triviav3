@@ -1,0 +1,101 @@
+#Contexto de la Trivia
+print("\t\t\t\t\t\t\t\t**Trivia de Videojuegos**")
+print("Se pondrán a prueba tus conocimientos")
+
+#Solicitando nombre
+nombre = input("Ingresa tu nombre: ")
+
+#PUNTAJES INICIALES DE LAS 3 PREGUNTAS
+puntajeA = 0
+puntajeB = 0
+puntajeC = 0
+puntajeTotal = 0
+print(f"Hola {nombre} tu puntaje inicial es {puntajeTotal}")
+
+#Instrucciones de la trivia
+print(
+    f"{nombre.capitalize()} responde las siguientes preguntas y presiona *Enter* para enviar tu\nrespuesta:\n"
+)
+
+#Pregunta 01
+print("1) ¿En qué año salió al mercado la primera consola?\n")
+print("\ta) 1969")
+print("\tb) 1970")
+print("\tc) 1971")
+print("\td) 1972")
+print("\te) 1968\n")
+
+#Almacenando respuesta 01
+r_p1 = input("Tu Respuesta: ") 
+while r_p1 not in ("a","b","c","d","e","1969","1970","1971","1972","1968"):
+  r_p1 = input("Respuesta no válida, vuelve a ingresar una respuesta: ")
+    
+#Evaluando Respuesta y Resultado p01
+if r_p1 == "1972" or r_p1 == "d":
+  puntajeA += 8
+  print(f"\n{nombre.capitalize()} tu respuesta es correcta!, has obtenido {puntajeA} puntos")
+elif r_p1 == "1969" or r_p1 == "a":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p1 == "1970" or r_p1 == "b":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p1 == "1971" or r_p1 == "c":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p1 == "1968" or r_p1 == "e":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+
+#Pregunta 02
+print("\n2) ¿Quién es el fundador de la tienda de Video Juegos Steam?\n")
+print("\ta) Tim Sweeney")
+print("\tb) Gabe Newell")
+print("\tc) Michael Morhaime")
+print("\td) Frank Pearce")
+print("\te) Yves Guillemot\n")
+
+#Almacenando respuesta 02
+r_p2 = input("Tu Respuesta: ")
+while r_p2 not in ("a","b","c","d","e","Tim Sweeney","Gabe Newell","Michael Morhaime","Frank Pearce","Yves Guillemot"):
+  r_p2 = input("Respuesta no válida, vuelve a ingresar una respuesta: ")
+
+#Evaluando Respuesta y Resultado p02
+if r_p2 == "Gabe Newell" or r_p2 == "b":
+  puntajeB += 6
+  print(f"\n{nombre.capitalize()} tu respuesta es correcta!, has obtenido {puntajeB} puntos")
+elif r_p2 == "Tim Sweeney" or r_p1 == "a":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p2 == "Michael Morhaime" or r_p1 == "c":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p2 == "Frank Pearce" or r_p1 == "d":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p2 == "Yves Guillemot" or r_p1 == "e":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+
+ 
+#Pregunta 03
+print("\n2) ¿Cual de los videojuegos son pertenece al género Shooter?\n")
+print("\ta) Counter Strike Global Offensive")
+print("\tb) Team Fortress")
+print("\tc) Overwatch")
+print("\td) Warframe")
+print("\te) N.a\n")
+
+#Almacenando respuesta 03
+r_p3 = input("Tu Respuesta: ")
+while r_p3 not in ("a","b","c","d","e","Counter Strike Global Offensive","Team Fortress","Overwatch","Warframe","N.a"):
+  r_p2 = input("Respuesta no válida, vuelve a ingresar una respuesta: ")
+
+#Evaluando Respuesta y Resultado p02
+if r_p3 == "N.a" or r_p3 == "e":
+  puntajeC += 6
+  print(f"\n{nombre.capitalize()} tu respuesta es correcta!, has obtenido {puntajeC} puntos")
+elif r_p3 == "Counter Strike Global Offensive" or r_p1 == "a":
+  print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p3 == "Team Fortress" or r_p1 == "b":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p3 == "Overwatch" or r_p1 == "c":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+elif r_p3 == "Warframe" or r_p1 == "d":
+    print(f"\n {nombre.capitalize()} tu respuesta es incorrecta!")
+
+PuntajeTotal = puntajeA + puntajeB + puntajeC
+
+print(f"\nMuchas gracias {nombre.capitalize()} por participar en esta trivia tu puntuacion total es {PuntajeTotal}")
